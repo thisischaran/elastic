@@ -1,0 +1,18 @@
+==========================Metricbeat setup in windows local machine=============
+
+Download the Metricbeat Windows zip file from the downloads page for current version.
+
+Extract the contents of the zip file into C:\Program Files.
+
+Rename the metricbeat-<version>-windows directory to metricbeat.
+
+Open a PowerShell prompt as an Administrator. set the execution policy as unrestricted
+
+PS C:\Program Files\Metricbeat> Set-executionpolicy unrestricted
+
+
+From the PowerShell prompt, run the following commands to install Metricbeat as a Windows service:
+PS C:\Program Files\Metricbeat> .\install-service-metricbeat.ps1
+
+
+

@@ -1,0 +1,32 @@
+do the changes as mentioned in following sections
+
+
+# =================================== Kibana ===================================
+
+setup.kibana:
+
+
+    host: "http://<ip of kibana installed host>:5601"
+
+
+# ---------------------------- Elasticsearch Output ----------------------------
+output.elasticsearch:
+  # Array of hosts to connect to.
+  hosts: ["https://<ip of kibana installed host>:9200"]
+
+  # Performance preset - one of "balanced", "throughput", "scale",
+  # "latency", or "custom".
+  preset: balanced
+
+  # Protocol - either `http` (default) or `https`.
+  protocol: "https"
+  ssl.verification_mode: "none"
+
+  # Authentication credentials - either API key or username/password.
+  #api_key: "id:api_key"
+  username: "elastic"
+  password: "changeme"
+
+=========================run following command================
+
+PS c:\ Program files> .\metricbeat.exe modules enable elasticsearch-xpack

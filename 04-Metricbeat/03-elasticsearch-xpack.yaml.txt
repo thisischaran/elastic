@@ -1,0 +1,10 @@
+do the following changes in file elasticsearch-xpack.yml inside  modules.d folder
+
+
+- module: elasticsearch
+  xpack.enabled: true
+  period: 10s
+  hosts: ["https://<<provide kibana ip>>:9200"]
+  protocol: "https"
+  ssl.verification_mode: "none"
+ 

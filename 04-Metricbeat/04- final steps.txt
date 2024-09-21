@@ -1,0 +1,10 @@
+
+PS > .\metricbeat.exe setup -e
+
+you should API response of  metricbeat is now able to connect to elastic seacrh and post system metrics
+
+PS > Start-Service metricbeat
+
+When you want to shut down please make sure to restrict the execution policy
+
+PS > Set-executionpolicy restricted
